@@ -1,0 +1,8 @@
+[submodule "themes/hugo-theme-bootstrap4-blog"]
+	path = themes/hugo-theme-bootstrap4-blog
+	url = git@github.com:SergeiZheleznov/hugo-theme-bootstrap4-blog.git
+	branch = master
+[submodule "public"]
+	path = public
+	url = git@github.com:SergeiZheleznov/SergeiZheleznov.github.io.git
+	branch = master
