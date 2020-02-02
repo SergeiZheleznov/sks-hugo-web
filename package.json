@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/SergeiZheleznov/sks-hugo-web/issues"
   },
-  "homepage": "https://github.com/SergeiZheleznov/sks-hugo-web#readme"
+  "homepage": "https://github.com/SergeiZheleznov/sks-hugo-web#readme",
+  "devDependencies": {
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-merge": "^4.2.2"
+  }
 }
