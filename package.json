@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/SergeiZheleznov/sks-hugo-web#readme",
   "devDependencies": {
+    "bootstrap": "^4.4.1",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
     "webpack-merge": "^4.2.2"

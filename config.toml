@@ -12,6 +12,6 @@ summaryLength = 50
 #  url = "https://example.org"
 
 [params]
-  author = "Your Name"
-  description = "A simple Hugo theme based on the Bootstrap v4 blog example."
+  author = "Sergei Zheleznov"
+  description = ""
   date_format = "Mon Jan 02, 2006"
