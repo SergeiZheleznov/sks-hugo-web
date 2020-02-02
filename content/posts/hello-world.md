@@ -7,6 +7,7 @@ menu:
     parent: tutorials
 title: Creating a New Theme
 weight: 10
+tags: ["SharePoint", "SPfX"]
 ---
 
 ## Hello World

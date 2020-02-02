@@ -1,55 +1,174 @@
-$enable-responsive-font-sizes: true;
+// Darkly 4.3.1
+// Bootswatch
 
-$white: #fff;
-$gray-100: #e9edf0;
-$gray-200: #adbcc4;
-$gray-300: #adbcc4;
-$gray-400: #8fa6b2;
-$gray-500: #5d7c8c;
-$gray-600: #3d6478;
-$gray-700: #264d61;
-$gray-800: #0c344b;
-$gray-900: #082333;
+//
+// Color system
+//
 
-$text-muted: $gray-400;
-$body-color: $gray-800;
-$light: $white;
-$dark: $gray-900;
-$headings-color: $gray-900;
-$headings-font-family: 'Open Sans', sans-serif;
-$headings-font-weight: 700;
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #ebebeb !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #999 !default;
+$gray-700: #444 !default;
+$gray-800: #303030 !default;
+$gray-900: #222 !default;
+$black:    #000 !default;
 
-$font-family-sans-serif: 'Roboto', sans-serif;
-$font-family-monospace: 'Roboto Mono', monospace;
-$font-family-serif: 'Roboto Slab', serif;
+$blue:    #375a7f !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #E74C3C !default;
+$orange:  #fd7e14 !default;
+$yellow:  #F39C12 !default;
+$green:   #00bc8c !default;
+$teal:    #20c997 !default;
+$cyan:    #3498DB !default;
 
-$link-color: $gray-800;
-$link-decoration: underline;
+$primary:       $blue !default;
+$secondary:     $gray-700 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-600 !default;
+$dark:          $gray-800 !default;
 
-$font-size-base: 1.125rem;
+$yiq-contrasted-threshold:  175 !default;
 
-$headings-margin-bottom: 1.25rem;
-$paragraph-margin-bottom: 1.5rem;
-$spacer: 1.125rem;
-$spacers: (
-  0: 0,
-  1: ($spacer * .25),
-  2: ($spacer * .5),
-  3: $spacer,
-  4: ($spacer * 1.5),
-  5: ($spacer * 3),
-  6: ($spacer * 5),
-  7: ($spacer * 6),
-  8: ($spacer * 7),
-  9: ($spacer * 8),
-);
+// Body
 
-$border-radius: .45rem;
-$border-radius-lg: .5rem;
-$border-radius-sm: .3rem;
-$blockquote-font-size: $font-size-base;
+$body-bg:                   $gray-900 !default;
+$body-color:                $white !default;
 
-$code-color: $body-color;
-$navbar-brand-font-size: 1rem;
-$navbar-nav-link-padding-x: 1.25rem;
-$navbar-padding-y: .4rem;
+// Links
+
+$link-color:                $success !default;
+
+// Fonts
+
+$font-family-sans-serif:      "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+$font-size-base:              0.9375rem !default;
+
+$h1-font-size:                3rem !default;
+$h2-font-size:                2.5rem !default;
+$h3-font-size:                2rem !default;
+
+// Tables
+
+$table-accent-bg:             $gray-800 !default;
+
+$table-border-color:          $gray-700 !default;
+
+// Forms
+
+$input-border-color:                    $body-bg !default;
+
+$input-group-addon-color:               $gray-500 !default;
+$input-group-addon-bg:                  $gray-700 !default;
+
+$custom-file-color:                 $gray-500 !default;
+$custom-file-border-color:          $body-bg !default;
+
+// Dropdowns
+
+$dropdown-bg:                       $gray-900 !default;
+$dropdown-border-color:             $gray-700 !default;
+$dropdown-divider-bg:               $gray-700 !default;
+
+$dropdown-link-color:               $white !default;
+$dropdown-link-hover-color:         $white !default;
+$dropdown-link-hover-bg:            $primary !default;
+
+// Navs
+
+$nav-link-padding-x:                2rem !default;
+$nav-link-disabled-color:           $gray-500 !default;
+
+$nav-tabs-border-color:             $gray-700 !default;
+$nav-tabs-link-hover-border-color:  $nav-tabs-border-color $nav-tabs-border-color transparent !default;
+$nav-tabs-link-active-color:        $white !default;
+$nav-tabs-link-active-border-color: $nav-tabs-border-color $nav-tabs-border-color transparent !default;
+
+// Navbar
+
+$navbar-padding-y:                  1rem !default;
+
+$navbar-dark-color:                rgba($white,.6) !default;
+$navbar-dark-hover-color:          $white !default;
+
+$navbar-light-color:                 $white !default;
+$navbar-light-hover-color:           $success !default;
+$navbar-light-active-color:         $white !default;
+$navbar-light-disabled-color:       rgba($white,.3) !default;
+$navbar-light-toggler-border-color: rgba($white,.1) !default;
+
+// Pagination
+
+$pagination-color:                  $white !default;
+$pagination-bg:                     $success !default;
+$pagination-border-width:           0 !default;
+$pagination-border-color:           transparent !default;
+
+$pagination-hover-color:            $white !default;
+$pagination-hover-bg:               lighten($success, 10%) !default;
+$pagination-hover-border-color:     transparent !default;
+
+$pagination-active-bg:              $pagination-hover-bg !default;
+$pagination-active-border-color:    transparent !default;
+
+$pagination-disabled-color:         $white !default;
+$pagination-disabled-bg:            darken($success, 15%) !default;
+$pagination-disabled-border-color:  transparent !default;
+
+// Jumbotron
+
+$jumbotron-bg:                      $gray-800 !default;
+
+// Cards
+
+$card-cap-bg:                       $gray-700 !default;
+$card-bg:                           $gray-800 !default;
+
+// Popovers
+
+$popover-bg:                        $gray-800 !default;
+
+$popover-header-bg:                 $gray-700 !default;
+
+// Modals
+
+$modal-content-bg:                  $gray-800 !default;
+$modal-content-border-color:        $gray-700 !default;
+
+$modal-header-border-color:         $gray-700 !default;
+
+// Progress bars
+
+$progress-height:                   0.625rem !default;
+$progress-font-size:                0.625rem !default;
+$progress-bg:                       $gray-700 !default;
+
+// List group
+
+$list-group-bg:                     $gray-800 !default;
+$list-group-border-color:           $gray-700 !default;
+
+$list-group-hover-bg:               $gray-700 !default;
+
+// Breadcrumbs
+
+$breadcrumb-bg:                     $gray-700 !default;
+
+// Close
+
+$close-color:                       $white !default;
+$close-text-shadow:                 none !default;
+
+// Code
+
+$pre-color:                         inherit !default;

@@ -5,7 +5,7 @@
         <div class="col">
             <article>
                 <div class="row justify-content-center">
-                    <div class="col-lg-8">
+                    <div class="col-lg-12">
                         <div class="meta text-muted mb-3">
                             <p class="created text-muted text-uppercase font-weight-bold mb-1">{{ $page.Date.Format "January 2, 2006" }}</p>
                             <span class="mr-2"><i class="fas fa-book-open mr-2"></i>{{ T "wordCount" $page.WordCount }}</span>
@@ -13,8 +13,6 @@
                         </div>
 
                         <h1>{{ $page.Title }}</h1>
-
-                        {{ partial "authors.html" $page }}
                     </div>
                 </div>
 
@@ -33,7 +31,7 @@
                 {{- end -}}
 
                 <div class="row justify-content-center">
-                    <div class="col-lg-8">
+                    <div class="col-lg-12">
                         <div class="content">
                             {{ $page.Content }}
                         </div>
@@ -48,24 +46,8 @@
                             </div>
                         {{- end -}}
 
-                        {{ partial "sharer.html" . }}
                     </div>
                 </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        {{ template "_internal/disqus.html" . }}
-                    </div>
-                </div>
-
-                {{- if .Site.Params.commento.enable -}}
-                <div class="row justify-content-center my-3">
-                    <div class="col-lg-8">
-                        <div id="commento"></div>
-                        <script src="{{ .Site.Params.commento.url }}"></script>
-                    </div>
-                </div>
-                {{- end -}}
             </article>
         </div>
     </div>
