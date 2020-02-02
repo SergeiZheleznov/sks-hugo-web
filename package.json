@@ -1,0 +1,22 @@
+{
+  "name": "sks-hugo-web",
+  "version": "1.0.0",
+  "description": "My Hugo website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergeiZheleznov/sks-hugo-web.git"
+  },
+  "keywords": [
+    "hugo"
+  ],
+  "author": "Sergei Zheleznov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SergeiZheleznov/sks-hugo-web/issues"
+  },
+  "homepage": "https://github.com/SergeiZheleznov/sks-hugo-web#readme"
+}
