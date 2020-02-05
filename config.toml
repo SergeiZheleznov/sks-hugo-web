@@ -15,7 +15,7 @@ summaryLength = 50
   author = "Sergei Zheleznov"
   description = ""
   date_format = "Mon Jan 02, 2006"
-  homepageImage = "/images/homepage-image.jpg"
+  homepageImage = ""
 
 [taxonomies]
   category = "categories"

@@ -58,7 +58,7 @@ body {
   line-height: 1.5;
   color: #fff;
   text-align: left;
-  background-color: #222; }
+  background-color: #303030; }
 
 [tabindex="-1"]:focus:not(.focus-visible) {
   outline: 0 !important; }
@@ -401,7 +401,7 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: #222;
+  background-color: #303030;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -1774,7 +1774,7 @@ pre {
   color: #444;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #222;
+  border: 1px solid #303030;
   border-radius: 0.25rem;
   -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -3097,7 +3097,7 @@ input[type="button"].btn-block {
   text-align: center;
   white-space: nowrap;
   background-color: #444;
-  border: 1px solid #222;
+  border: 1px solid #303030;
   border-radius: 0.25rem; }
   .input-group-text input[type="radio"],
   .input-group-text input[type="checkbox"] {
@@ -3285,7 +3285,7 @@ input[type="button"].btn-block {
   color: #444;
   vertical-align: middle;
   background: #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23303030' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px;
-  border: 1px solid #222;
+  border: 1px solid #303030;
   border-radius: 0.25rem;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -3363,7 +3363,7 @@ input[type="button"].btn-block {
   line-height: 1.5;
   color: #adb5bd;
   background-color: #fff;
-  border: 1px solid #222;
+  border: 1px solid #303030;
   border-radius: 0.25rem; }
   .custom-file-label::after {
     position: absolute;
@@ -3392,12 +3392,12 @@ input[type="button"].btn-block {
   .custom-range:focus {
     outline: none; }
     .custom-range:focus::-webkit-slider-thumb {
-      -webkit-box-shadow: 0 0 0 1px #222, 0 0 0 0.2rem rgba(55, 90, 127, 0.25);
-              box-shadow: 0 0 0 1px #222, 0 0 0 0.2rem rgba(55, 90, 127, 0.25); }
+      -webkit-box-shadow: 0 0 0 1px #303030, 0 0 0 0.2rem rgba(55, 90, 127, 0.25);
+              box-shadow: 0 0 0 1px #303030, 0 0 0 0.2rem rgba(55, 90, 127, 0.25); }
     .custom-range:focus::-moz-range-thumb {
-      box-shadow: 0 0 0 1px #222, 0 0 0 0.2rem rgba(55, 90, 127, 0.25); }
+      box-shadow: 0 0 0 1px #303030, 0 0 0 0.2rem rgba(55, 90, 127, 0.25); }
     .custom-range:focus::-ms-thumb {
-      box-shadow: 0 0 0 1px #222, 0 0 0 0.2rem rgba(55, 90, 127, 0.25); }
+      box-shadow: 0 0 0 1px #303030, 0 0 0 0.2rem rgba(55, 90, 127, 0.25); }
   .custom-range::-moz-focus-outer {
     border: 0; }
   .custom-range::-webkit-slider-thumb {
@@ -3546,7 +3546,7 @@ input[type="button"].btn-block {
   .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
     color: #fff;
-    background-color: #222;
+    background-color: #303030;
     border-color: #444 #444 transparent; }
   .nav-tabs .dropdown-menu {
     margin-top: -1px;
@@ -8261,6 +8261,9 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #444; } }
+
+main {
+  margin-top: 80px; }
 
 
 /*# sourceMappingURL=main.min.css.map*/
