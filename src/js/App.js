@@ -1,6 +1,7 @@
 'use strict';
 
 import $ from 'jquery';
+
 import { library, dom } from '@fortawesome/fontawesome-svg-core';
 import {
     faBookOpen,

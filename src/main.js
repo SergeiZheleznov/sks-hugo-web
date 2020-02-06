@@ -1,5 +1,5 @@
 import './scss/styles.scss';
-
+import './../node_modules/devicons/css/devicons.scss'
 import(/* webpackChunkName: "bootstrap" */ 'bootstrap');
 
 window.addEventListener('DOMContentLoaded', async (event) => {

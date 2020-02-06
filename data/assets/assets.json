@@ -20,5 +20,11 @@
   },
   "vendors~ekkoLightbox": {
     "js": "vendors~ekkoLightbox.js"
+  },
+  "": {
+    "eot": "fonts/devicons.eot",
+    "svg": "fonts/devicons.svg",
+    "ttf": "fonts/devicons.ttf",
+    "woff": "fonts/devicons.woff"
   }
 }
