@@ -8,7 +8,7 @@
                     <img src="{{ . | relURL }}" class="img-fluid">
                 </div>
             {{- end -}}
-            <span style="font-size: 4rem;" class="devicons devicons devicons-github_alt"></span>
+            
 
             <h1 class="display-4">{{ .Site.Title }}</h1>
             {{- with .Site.Params.description -}}
@@ -16,6 +16,12 @@
             {{- end -}}
         </div>
     </div>
+
+    {{ with .Site.GetPage "technology" }}
+        {{ range .Pages}}
+            <span style="font-size: 4rem;" class="devicons devicons {{ .Params.icon }}"></span>
+        {{ end }}
+    {{ end }}
 
     <!-- Latest article -->
     {{- range first 1 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) -}}

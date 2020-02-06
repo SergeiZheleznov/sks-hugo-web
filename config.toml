@@ -22,6 +22,7 @@ summaryLength = 50
   tag = "tags"
   series = "series"
   author = "authors"
+  technology = "technologies"
 
 [markup]
   [markup.highlight]
