@@ -1,4 +1,0 @@
----
-title: Technologe
-icon: devicons-
----
