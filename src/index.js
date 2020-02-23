@@ -1,6 +1,7 @@
-// JS Goes here - ES6 supported
+import hljs from 'highlight.js/lib/highlight';
+import javascript from 'highlight.js/lib/languages/javascript';
+hljs.registerLanguage('javascript', javascript);
 
 import "./css/main.scss";
 
-// Say hello
-console.log("🦊 Hello! Edit me in src/index.js");
+hljs.initHighlightingOnLoad();
