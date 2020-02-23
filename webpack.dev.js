@@ -29,7 +29,8 @@ module.exports = merge(common, {
       cleanOnceBeforeBuildPatterns: [
         "dist/**/*.js",
         "dist/**/*.css",
-        "site/content/webpack.json"
+        "site/content/webpack.json",
+        "!.git",
       ]}),
 
     new MiniCssExtractPlugin({

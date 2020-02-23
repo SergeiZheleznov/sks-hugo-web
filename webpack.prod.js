@@ -10,7 +10,9 @@ module.exports = merge(common, {
   mode: "production",
 
   plugins: [
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin({
+      cleanOnceBeforeBuildPatterns: ['**/*', '!.git'],
+     }),
   ],
 
   output: {
