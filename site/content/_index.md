@@ -3,12 +3,14 @@ title: 'Hi!'
 date: 2018-11-14T19:02:50-07:00
 draft: false
 spec:
-    - React
+    - HTML&CSS
     - JavaScript
-    - HTML
-    - SharePoint
+    - React
     - WebPack
-    - Tailwindcss
 ---
 
-I'am Sergei Zheleznov. Front-end developer based in Heilbronn, Germany.
+I am Sergei Zheleznov, front-end developer based in [Heilbronn](https://en.wikipedia.org/wiki/Heilbronn), Germany.
+
+Currently I am working on JS-based solutions for SharePoint and Office 365 at [CollabStack](https://collabstack.de/).
+
+[LinkedIn](https://www.linkedin.com/in/sksdes/)

@@ -6,9 +6,16 @@
 
 .md-content {
     h1 {
-        @apply text-4xl;
+        @apply text-xl;
     }
     h2 {
-        @apply text-3xl;
+        @apply text-lg;
+    }
+    p {
+        @apply mb-2;
+    }
+    a {
+        @apply underline;
+        @apply text-purple-600;
     }
 }
