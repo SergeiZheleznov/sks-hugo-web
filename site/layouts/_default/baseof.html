@@ -15,11 +15,8 @@
 
 <body class="bg-gray-400">
   {{ block "header" . }}{{ partial "header" . }}{{end}}
-  
   {{ block "main" . }}{{end}}
-
   {{ block "footer" . }}{{ partial "footer" . }}{{end}}
-
   {{ $script := .Site.Data.webpack.main }}
   {{ with $script.js }}
     <script src="{{ relURL . }}"></script>

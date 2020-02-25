@@ -6,9 +6,15 @@
       <div class="text-gray-700 text-base md-content">{{ .Content }}</div>
     </div>
     <div class="px-6 py-2">
-      {{- range .Params.spec -}}
-        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#{{ . }}</span>
-      {{- end -}}
+
+        {{ range .Site.Taxonomies.categories }}
+          <h2 class="mb-4 pb-2 font-bold text-lg border-b border-gray-200">{{ .Page.Title }}</h2>
+          {{ range .Pages }}
+            <a href="{{ .Permalink }}" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{{ .Title }}</a>
+          {{ end }}
+        {{ end }}
+      </ul>
+
     </div>
   </div>
 {{ end }}
