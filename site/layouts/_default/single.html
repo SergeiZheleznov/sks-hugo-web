@@ -1,5 +1,16 @@
-{{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
-<article class="content">
-  <main>{{- .Content -}}</main>
-</article>
+{{ define "main" }} 
+
+  <article class="content">
+    <main>{{- .Content -}}</main>
+  </article>
+
+  {{ $taxo := "categories" }} <!-- Use the plural form here -->
+  <ul id="{{ $taxo }}">
+      {{ range .Param $taxo }}
+          {{ $name := . }}
+          {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
+              <li><a href="{{ .Permalink }}">{{ $name }}</a> {{ .Params.link }}</li>
+          {{ end }}
+      {{ end }}
+  </ul>
 {{ end }}

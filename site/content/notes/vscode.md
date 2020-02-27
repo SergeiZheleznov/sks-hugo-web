@@ -4,10 +4,15 @@ categories: ["Tools"]
 ---
 ## My current extensions list
 
-- Better TOOML
+- Better TOML
 - Hugo Language and Syntax Support
 - markdownlint
 - Material Icon Theme
-- Material Theme
+- SznthWave '84
 - Prettier - Code formatter
 - Tailwind CSS IntelliSense
+- Bracket Pair Colorizer 2
+- Hugo Language and Syntax Support
+- npm
+- Sass
+- TSLint
