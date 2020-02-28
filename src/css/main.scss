@@ -4,6 +4,11 @@
 
 @import "highlight.js/styles/ocean.css";
 
+a {
+    @apply underline;
+    @apply text-indigo-600;
+}
+
 .md-content {
     h1 {
         @apply text-xl;
@@ -11,6 +16,8 @@
     }
     h2 {
         @apply text-lg;
+        @apply font-bold;
+        @apply mb-4;
     }
     p {
         @apply mb-2;

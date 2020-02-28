@@ -1,6 +1,7 @@
 ---
 title: VS Code
 categories: ["Tools"]
+tags: ["tag1", "tag2"]
 ---
 ## My current extensions list
 

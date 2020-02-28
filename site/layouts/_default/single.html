@@ -1,16 +1,23 @@
-{{ define "main" }} 
+{{ define "main" }}
+<div class="container max-w-2xl mx-auto my-10">
+  <div class="bg-white p-10 rounded-md">
 
-  <article class="content">
-    <main>{{- .Content -}}</main>
-  </article>
+    {{ $taxo := "categories" }}
+    <ul>
+        {{ range .Param $taxo }}
+            {{ $name := . }}
+            {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
+                <li><a href="{{ .Permalink }}" class="font-bold text-xs">{{ $name }}</a></li>
+            {{ end }}
+        {{ end }}
+    </ul>
+    <hr class="my-5" />
 
-  {{ $taxo := "categories" }} <!-- Use the plural form here -->
-  <ul id="{{ $taxo }}">
-      {{ range .Param $taxo }}
-          {{ $name := . }}
-          {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
-              <li><a href="{{ .Permalink }}">{{ $name }}</a> {{ .Params.link }}</li>
-          {{ end }}
-      {{ end }}
-  </ul>
+    <div class="md-content">
+      {{- .Content -}}
+    </div>
+
+
+  </div>
+</div>
 {{ end }}
