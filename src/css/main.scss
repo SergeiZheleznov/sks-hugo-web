@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
 @import "highlight.js/styles/ocean.css";
+
+body {
+    font-family: 'Fira Sans';
+}
 
 a {
     @apply underline;
