@@ -8,6 +8,7 @@
   <title>{{ $.Site.Title }}</title>
 
   {{ $stylesheet := .Site.Data.webpack.main }}
+
   {{ with $stylesheet.css }}
     <link href="{{ relURL . }}" rel="stylesheet">
   {{ end }}

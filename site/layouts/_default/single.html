@@ -5,14 +5,14 @@
     {{ $taxo := "categories" }}
     <ul class="font-bold text-xs list-none">
       <li class="inline-block"><a href="{{ .Site.BaseURL }}">Index</a></li>
-      <li class="inline-block px-2 sm:hidden">&CenterDot;</li>
+      <li class="md:inline-block px-2 sm:hidden">&CenterDot;</li>
         {{ range .Param $taxo }}
             {{ $name := . }}
             {{ with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
                 <li class="inline-block">{{ $name }}</li>
             {{ end }}
         {{ end }}
-        <li class="inline-block px-2 sm:hidden">&CenterDot;</li>
+        <li class="md:inline-block px-2 sm:hidden">&CenterDot;</li>
         <li class="inline-block">{{ .Title }}</li>
     </ul>
     <hr class="my-5" />

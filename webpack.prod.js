@@ -31,9 +31,9 @@ module.exports = merge(common, {
       new MiniCssExtractPlugin({
         filename: "[name].[hash:5].css",
         chunkFilename: "[id].[hash:5].css"
-      })
+      }),
 
-      // new OptimizeCSSAssetsPlugin({})
+      new OptimizeCSSAssetsPlugin({})
     ]
   }
 });
