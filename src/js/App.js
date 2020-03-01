@@ -1,7 +1,10 @@
-'use strict';
+import hljs from 'highlight.js/lib/highlight';
+import javascript from 'highlight.js/lib/languages/javascript';
+
 
 export default {
-    test: () => {
-
+    loadHighlighting: () => {
+        hljs.registerLanguage('javascript', javascript);
+        hljs.initHighlightingOnLoad();
     },
 };
