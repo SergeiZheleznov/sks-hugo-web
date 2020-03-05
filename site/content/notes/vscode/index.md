@@ -1,8 +1,11 @@
 ---
 title: VS Code
 categories: ["Tools"]
+images: ["vscode.png"]
 ---
 ## My current extensions list
+
+![vs code](/notes/vscode/vscode.png)
 
 - [Better TOML](https://marketplace.visualstudio.com/items?itemName=bungcip.better-toml)
 - [Hugo Language and Syntax Support](https://marketplace.visualstudio.com/items?itemName=budparr.language-hugo-vscode)
