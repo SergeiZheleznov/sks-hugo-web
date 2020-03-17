@@ -1,0 +1,12 @@
+{{ define "main" }}
+<div class="container mx-auto my-10">
+  <div class="bg-white p-10 rounded-md">
+    <h1 class="text-2xl">{{.Title}}</h1>
+    <div class="flex content-center flex-wrap">
+      {{ range .Pages }}
+        {{ .Render "summary" }}
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}
