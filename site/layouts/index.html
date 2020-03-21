@@ -13,6 +13,13 @@
             <a href="{{ .Permalink }}" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{{ .Title }}</a>
           {{ end }}
         {{ end }}
+
+
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+          <a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+        {{ end }}
+
       </ul>
 
     </div>
