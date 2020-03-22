@@ -20,9 +20,15 @@
 </head>
 
 <body class="bg-gray-400">
-  {{ block "header" . }}{{ partial "header" . }}{{end}}
-  {{ block "main" . }}{{end}}
+  <div class="flex justify-center items-stretch p-5">
+    <div class="max-w-sm rounded shadow-lg bg-gray-100 self-start">
+      {{ block "header" . }}{{ partial "header" . }}{{end}}
+      {{ block "submenu" . }}{{end}}
+    </div>
+    {{ block "main" . }}{{end}}
+  </div>
   {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+
   {{ $script := .Site.Data.webpack.main }}
   {{ with $script.js }}
     <script src="{{ relURL . }}"></script>

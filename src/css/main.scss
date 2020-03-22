@@ -14,11 +14,6 @@ body {
     color:#fff;
 }
 
-a {
-    @apply underline;
-    @apply text-indigo-600;
-}
-
 .md-content {
     h1 {
         @apply text-xl;
@@ -28,6 +23,9 @@ a {
         @apply text-lg;
         @apply font-bold;
         @apply mb-4;
+    }
+    h3 {
+        @apply uppercase;
     }
     p {
         @apply mb-2;

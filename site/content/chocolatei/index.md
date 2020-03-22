@@ -78,5 +78,4 @@ menu = "main"
     choco = "fsviewer"
     www = "https://www.faststone.org/FSViewerDetail.htm"
 +++
-
-## Chocolatei packages
+Chocolatey is a machine-level package manager and installer for software packages, built for the Windows NT platform.

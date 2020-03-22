@@ -1,27 +1,2 @@
-{{ define "main" }}
-  <div class="max-w-sm mx-auto rounded overflow-hidden shadow-lg mt-10 bg-gray-100">
-    <img class="w-full h-48 object-cover object-top" src="/img/card.jpg" alt="Sunset in the mountains">
-    <div class="px-6 py-4">
-      <div class="font-bold text-xl mb-2">{{ .Title }}</div>
-      <div class="text-gray-700 text-base md-content">{{ .Content }}</div>
-    </div>
-    <div class="px-6 py-2">
-
-        {{ range .Site.Taxonomies.categories }}
-          <h2 class="mb-4 pb-2 font-bold text-lg border-b border-gray-200">{{ .Page.Title }}</h2>
-          {{ range .Pages }}
-            <a href="{{ .Permalink }}" class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{{ .Title }}</a>
-          {{ end }}
-        {{ end }}
-
-
-        {{ $currentPage := . }}
-        {{ range .Site.Menus.main }}
-          <a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
-        {{ end }}
-
-      </ul>
-
-    </div>
-  </div>
-{{ end }}
+{{define "main"}}
+{{end}}

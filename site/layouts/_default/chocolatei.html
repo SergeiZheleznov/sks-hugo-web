@@ -1,10 +1,6 @@
 {{ define "main" }}
-<div class="container max-w-2xl mx-auto my-10">
+<div class="w-1/3 ml-5">
   <div class="bg-white p-10 rounded-md">
-    <a href="{{ .Site.BaseURL }}">Index</a>
-    <div class="md-content">
-      {{.Content}}
-    </div>
 
     <h2 class="text-3xl mb-4">DevTools</h2>
     {{ range .Params.devtools.package }}
@@ -24,3 +20,14 @@
   </div>
 </div>
 {{ end }}
+
+{{ define "submenu" }}
+<div>
+  {{ with .Resources.GetMatch "logo_square.svg" }}
+    <img class="w-full" src="{{.RelPermalink}}" alt="">
+  {{ end }}
+  <div class="px-6 py-4 md-content">
+    {{.Content}}
+  </div>
+</div>
+{{end}}
